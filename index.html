@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,69 +9,142 @@
     <!-- CSS STYLESHEET -->
     <link rel="stylesheet" href="./dist/css/styles.css">
 
-    
+
     <!-- FONT STYLE -->
     <link rel="stylesheet" href="https://use.typekit.net/zml6fcy.css">
-    
+
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <title>YourYoga</title>
 </head>
+
 <body>
-<div class="main__wrapper__container">
-    <header>
-        <nav id="navbar">
-            <h3 class="nav__brand">Your<span class="yoga">Yoga</span></h3>
+    <div class="main__wrapper__container">
+        <header>
+            <nav id="navbar">
+                <h3 class="nav__brand">Your<span class="yoga">Yoga</span></h3>
 
-            <ul class="nav__list">
-                <li><a href="#" class="nav__link">About Us</a></li>
-                <li><a href="#" class="nav__link">Classes</a></li>
-                <li><a href="#" class="nav__link">Prices</a></li>
-                <li><a href="#" class="nav__link">Meet The Team</a></li>
-                <li><a href="#" class="nav__link">Contact Us</a></li>
-            </ul>
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">About Us</a></li>
+                    <li><a href="#" class="nav__link">Classes</a></li>
+                    <li><a href="#" class="nav__link">Prices</a></li>
+                    <li><a href="#" class="nav__link">Meet The Team</a></li>
+                    <li><a href="#" class="nav__link">Contact Us</a></li>
+                </ul>
 
-            <a href="#" class="btn btn--dark nav__btn">Book A Session</a>
-        </nav>
-    </header>
-   
+                <a href="#" class="btn btn--dark nav__btn">Book A Session</a>
+            </nav>
+        </header>
 
 
-<!-- HERO SECTION -->
-<section id="hero">
-    <div class="hero__content__container">
-        <hr class="divider">
-<h1 class="hero__title">Learn yoga and discover <span class="color-txt">your</span> inner peace today.</h1>
-<h3 class="hero__subtitle">Book in a sesson today</h3>
 
-<div class="hero__btn__container">
-    <a class="btn btn--dark">BOOK A SESSION</a>
-    <a class="btn btn--transparent">GET IN TOUCH</a>
-</div>
-</div>
-</section>
+        <!-- HERO SECTION -->
+        <section id="hero">
+            <div class="hero__content__container">
+                <hr class="divider">
+                <h1 class="hero__title">Learn yoga and discover <span class="color-txt">your</span> inner peace today.
+                </h1>
+                <h3 class="hero__subtitle">Book in a sesson today</h3>
 
-    
+                <div class="hero__btn__container">
+                    <a class="btn btn--dark">BOOK A SESSION</a>
+                    <a class="btn btn--transparent">GET IN TOUCH</a>
+                </div>
+            </div>
+        </section>
 
-<!-- ABOUT SECTION -->
-<section id="about">
-    <div class="about__main__container">
-        <div class="img__container">
-        <img src="dist/images/about-img.jpg" class="about__img">
+
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <div class="about__main__container">
+                <div class="img__container">
+                    <img src="dist/images/about-img.jpg" class="about__img">
+                </div>
+
+                <div class="about__text__container ">
+                    <div>
+                        <hr class="divider padded">
+                        <h2 class="title about__title">About Us<span class="color-txt">.</span></h2>
+                        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                            aliquet maximus tempus. Phasellus blandit sem eu odio dictum, in facilisis leo tempus. Nunc
+                            libero tortor, aliquet a velit ut, luctus finibus sem. Cras semper in lorem non congue.
+                            Nulla id nulla ligula. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum
+                            primis in faucibus.</p>
+                        <a href="" class="btn btn--transparent about__btn">Book A Session</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+            <div class="about__main__container second__about__con">
+                <div class="img__container">
+                    <img src="dist/images/about-img2.jpg" class="about__img">
+                </div>
+                <div class="about__text__container">
+                    <div>
+                        <hr class="divider padded">
+                        <h2 class="title about__title">Why do yoga<span class="color-txt">?</span></h2>
+                        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                            aliquet maximus tempus. Phasellus blandit sem eu odio dictum, in facilisis leo tempus. Nunc
+                            libero tortor, aliquet a velit ut, luctus finibus sem.</p>
+
+                            <div class="why__main__container">
+                            <div class="why__container">
+                                <div class="why__icon__container">
+                                    <i class="icon fa-solid fa-face-smile"></i>
+                                </div>
+                              <p class="why__reason">Yoga boosts dopamines which leads to <strong class="color-txt">happier</strong> living!</p>
+                            </div>
+
+                            <div class="why__container">
+                                <div class="why__icon__container">
+                                    <i class="icon fa-solid fa-heart-pulse"></i>
+                                </div>
+                                <p class="why__reason">Yoga benefits <strong class="color-txt">heart</strong> health.</p>
+                            </div>
+
+                            <div class="why__container">
+                                <div class="why__icon__container">
+                                    <i class="icon fa-solid fa-person-running"></i>
+                                </div>
+                              <p class="why__reason">Yoga improves <strong class="color-txt">strength</strong>, <strong>balance</strong>, and <strong>flexibilty</strong></p>
+                            </div>
+
+                            <div class="why__container">
+                                <div class="why__icon__container">
+                                    <i class="icon fa-solid fa-bed"></i>
+                                </div>
+                              <p class="why__reason">Yoga relaxes you, to help you <strong class="color-txt">sleep</strong> better.</p>
+                            </div>
+                            
+                        </div>
+
+
+                        <a href="" class="btn btn--transparent about__btn">Book A Session</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
     </div>
-
-        <div class="about__text__container">
-            <div>
-            <h2 class="title about__title">About Us<span class="color-txt">.</span></h2>
-            <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquet maximus tempus. Phasellus blandit sem eu odio dictum, in facilisis leo tempus. Nunc libero tortor, aliquet a velit ut, luctus finibus sem. Cras semper in lorem non congue. Nulla id nulla ligula. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-            <a href="" class="btn btn--transparent about__btn">Book A Session</a>
-        </div>
-        </div>
-    </div>
-</section>
-
-    
-    
-    
-</div>
     <script src="./dist/js/all.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
+
 </html>
