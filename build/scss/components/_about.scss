@@ -1,0 +1,191 @@
+@import "../base/variables";
+
+
+#about {
+    background: url("../images/section-bg1.png");
+    background: {
+        size: cover;
+        position: center center;
+    }
+    padding: 4rem 0;
+    overflow: hidden;
+
+
+
+    .about__main__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        margin: 2rem 0;
+
+
+        @media screen and (max-width: $tablet) {
+            flex-direction: column-reverse;
+            gap: 4rem;
+        }
+
+
+
+        .img__container {
+            width: 50vw;
+            display: flex;
+            justify-content: flex-end;
+            object-fit: cover;
+
+
+            @media screen and (max-width: $tablet) {
+                justify-content: center;
+                width: 100vw;
+            }
+
+            .about__img {
+                width: 25vw;
+                box-shadow: 20px 20px 0px rgba(0, 250, 154, 0.608);
+
+            
+                @media screen and (max-width: $tablet) {
+                    justify-content: center;
+                    width: 100vw;
+                    height: 40vh;
+                    object-fit: cover;
+                    object-position: center center;
+                    box-shadow: none;
+                }
+            }
+
+        }
+
+
+
+
+
+        .about__text__container {
+            width: 50vw;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            @media screen and (max-width: $tablet) {
+                width: 70vw;
+                margin: 0 auto;
+                padding: 2rem 0;
+                text-align: center;
+            }
+
+            @media screen and (max-width: $mobile) {
+                width: 90vw;
+            }
+
+
+
+            .about__title {
+                color: $clr-light;
+                text-align: left;                
+                @media screen and (max-width: $mobile) {
+                font-size: $fs-xlrge;
+            }
+            }
+
+
+
+            .about__description {
+                color: $clr-light;
+                margin: 3rem 0;
+                width: 60%;
+
+                @media screen and (max-width: $tablet) {
+                    width: 100%;
+                    margin: 2rem auto;
+                    text-align: left;
+                }
+                
+            }
+
+
+
+            .about__btn {
+            @media screen and (max-width: $tablet) {
+                display: block;
+            }
+            }
+
+
+        }
+    }
+
+
+    .second__about__con {
+       margin: 8rem 0;
+
+       @media screen and (max-width: $tablet) {
+        margin: 2rem 0;
+    }
+
+    }
+
+
+.why__main__container {
+    margin: 1rem 0; 
+    padding-bottom: .6rem;
+
+    .why__container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin: 4rem 0;
+
+        
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+        }
+
+        .why__icon__container {
+            transition: all .4s ease;
+            background: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 100%;
+            border: solid 2px $clr-primary;
+
+            &:hover {
+                transition: all .4s ease;
+                box-shadow: 0 0 10px $clr-primary;
+                transform: scale(1.1);
+            }
+        }
+
+        .icon {
+            color: $clr-primary;
+            font-size: $fs-lrge;
+        }
+
+
+        .why__reason {
+            color: $clr-light;
+            font-size: $fs-sml;
+
+            
+            @media screen and (max-width: $tablet) {
+                width: 60%;
+                margin: 1rem auto;
+            }
+        }
+    }
+
+}
+
+
+
+    @media screen and (max-width: $tablet) {
+        padding-bottom: 0;
+        padding-top: 1rem;;
+    }
+
+
+}

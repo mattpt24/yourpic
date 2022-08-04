@@ -1,0 +1,102 @@
+@import "../base/variables";
+
+
+#navbar {
+  transition: all .4s ease;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    position: fixed;
+    padding: 3rem 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 999;
+
+    @media screen and (max-width: $tablet) {
+      justify-content: flex-start;
+    }
+
+    @media screen and (max-width: $mobile) {
+      padding: 1rem;
+    }
+
+    .nav__brand {
+      color: $clr-primary;
+      font-size: $fs-med;
+      font-weight: $fw-bold;
+
+      @media screen and (max-width: $tablet) {
+      padding-left: 2rem;
+      }
+
+      @media screen and (max-width: $mobile) {
+      padding: 1rem 1rem 1rem .5rem;
+      }
+
+      .yoga {
+        color: $clr-light;
+      }
+    }
+
+    .nav__list {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        align-items: center;
+        list-style: none;
+        color: $clr-text1;
+        font-size: $fs-sml;
+
+        @media screen and (max-width: $tablet) {
+          display: none;
+        }
+
+        .nav__link {
+          transition: all .4s ease;
+          position: relative;
+          color: $clr-light;
+          font-weight: $fw-medium;
+
+          &:hover {
+            transition: all .4s ease;
+            color: $clr-primary;
+          }
+
+          &:after {
+            transition: all .4s ease;
+            content: "";
+            width: 0%;
+            height: 2px;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            background: $clr-primary;
+            z-index: -1;
+          }
+
+          &:hover:after {
+            transition: all .4s ease;
+            width: 100%;
+          }
+        }
+  }
+
+
+  .nav__btn {
+    @media screen and (max-width: $tablet) {
+     display: none; 
+    }
+  }
+}
+
+
+
+.fixed-nav {
+  transition: all .5s ease;
+  border-bottom: solid 1px rgb(28, 40, 55);
+  padding: .5rem!important;
+  background: $clr-third!important;
+}

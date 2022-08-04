@@ -1,0 +1,143 @@
+@import "../base/variables";
+
+
+#pricing {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem 0;
+    background: url("../images/pricing-bg.png");
+    background-size: cover;
+
+    @media screen and (max-width: $tablet) {
+       padding: 0;
+    }
+
+    .divider {
+        width: 20vw;
+        margin: 1rem auto 0 auto;
+    }
+
+    .title {
+        margin-bottom: 4rem;
+        padding: 6rem 0;
+
+        @media screen and (max-width: $tablet) {
+            padding: 2rem 0 0 0;
+        }
+    }
+
+    
+    .most__popular {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: .5rem 0;
+        color: white;
+        background: rgb(13, 61, 43);
+        background: linear-gradient(100deg, rgba(13, 61, 43, 1) 0%, rgba(0, 250, 154, 1) 100%);
+        width: 100%;
+        text-align: center;
+        font-weight: $fw-bold;
+    }
+
+
+    .pricing__cards__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 4rem;
+
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+
+        .pricing__card {
+            transition: all .4s ease;
+            background: $clr-third-lighter;
+            text-align: center;
+            padding: 4rem 2rem;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            position: relative;
+            border: solid 1px $clr-primary;
+            border-radius: 3px;
+
+            @media screen and (max-width: $mobile) {
+                width: 90vw;
+            }
+
+            &:hover {
+                transition: all .4s ease;
+                transform: translateY(-20px);
+            }
+
+            .pricing__card__text {
+                color: #c2c2c2;
+                width: 70%;
+                margin: 0 auto;
+                padding-top: 2rem;
+            }
+
+            &.middle__card {
+                transform: scale(1.2);
+                box-shadow: 0 0 15px $clr-primary;
+                z-index: 1;
+
+                @media screen and (max-width: $tablet) {
+                    transform: scale(1);
+                }
+
+                &:hover {
+                    transition: all .4s ease;
+                }
+            }
+
+            .pricing__card__tier {
+                color: $clr-primary;
+                font-size: $fs-sml;
+            }
+
+            .pricing__card__price {
+                color: $clr-light;
+                font-size: $page-title;
+                margin-top: 1rem;
+
+                .price__decimal {
+                    font-size: 1rem;
+                }
+            }
+
+            .pricing__card__includes {
+                color: $clr-light;
+                line-height: 1.6;
+                margin: 4rem 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .pricing__includes__item {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: .5rem 0;
+                    width: 100%;
+
+
+                    .tick-icon {
+                        color: $clr-primary;
+                        font-size: $fs-sml;
+                        padding-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

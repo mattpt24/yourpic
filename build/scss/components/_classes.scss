@@ -1,0 +1,150 @@
+@import "../base/variables";
+
+
+
+#classes {
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("../images/section-bg1.png");
+    background: {
+        size: cover;
+        position: top center;
+    }
+
+
+    .subtitle {
+        text-align: center;
+        width: 90vw;
+        margin: 0 auto 4rem auto;
+    }
+
+
+    .classes__title {
+        margin: 4rem 0;
+    }
+
+
+    .classes__card__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding: 2rem;
+        overflow: hidden;
+
+        .class__name__desktop {
+            color: $clr-light;
+            font-size: $fs-lrge;
+            text-align: center;
+            padding: 2rem 0;
+            // border-bottom: solid 2px $clr-primary;
+
+            @media screen and (max-width: $tablet) {
+                font-size: $fs-med;
+            }
+        }
+
+
+        .class__card {
+            position: relative;
+            width: 500px;
+            box-shadow: -8px 0px 0 $clr-primary;
+    
+            .class__card__img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &:after {
+                transition: all .4s ease;
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                background: rgba(17, 136, 90, 0.784);
+                z-index: 0;
+
+                @media screen and (max-width: $mobile) {
+                    display: none;
+                }
+            }
+
+            &:hover:after {
+                transition: all .4s ease;
+                width: 100%;
+            }
+
+
+
+            .class__card__text {
+                transition: all .4s ease;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                z-index: 1;
+                text-align: center;
+
+                &:hover {
+                    transition: all .4s ease;
+                    opacity: 1;
+                }
+
+                .class__card__name {
+                    color: $clr-light;
+                    font-size: $fs-xlrge;
+
+                    @media screen and (max-width: $tablet) {
+                       font-size: $fs-lrge;
+                    }
+                }
+
+                .class__card__description {
+                    color: $clr-light;
+                    font-size: $fs-med;
+                    width: 80%;
+                    margin: 1rem auto;
+                }
+
+                @media screen and (max-width: $tablet) {
+                    opacity: 1;
+                    background: rgba(0,0,0,0.7);
+                }
+            }
+
+            @media screen and (max-width: $mobile) {
+                width: 85vw;
+            }
+        }
+
+
+        @media screen and (max-width: $mobile) {
+            padding: 0;
+        }
+
+    }
+
+
+    @media screen and (max-width: $mobile) {
+        padding: 3rem 0;
+    }
+
+
+
+
+}
+
